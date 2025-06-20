@@ -10,8 +10,11 @@
 
 <body>
   <header class="fun-bg">
+    <div class="hero-bg"></div>
+
     <nav> <!-------- NAV BAR -------->
-        <a class="logo" href="#"><img src="resources/logoipsum-215.svg"></a>
+        <a class="logo" href="#"><img src="resources/logoipsum-215.svg" alt="Home page button"></a>
+        <a href="#main-start" class="skip-btn">Skip to Main Content</a>
         <div class="menu">
           <a href="#">Button</a>
           <a href="#">Button</a>
@@ -19,16 +22,16 @@
           <a href="#">Button</a>
           <a href="#">Button</a>
         </div>
-        <a class="arrow-btn teal-btn" href="#">Contact Us <span class="arrow white-arw"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        <a class="arrow-btn teal-btn" href="#"><span class="animate-teal text">Contact Us</span><span class="btn-animate"></span><i class="arrow fa-solid fa-arrow-right" aria-hidden="true"></i></a>
     </nav>
 
     <div class="header-content"> <!-------- HEADER CONTENT -------->
-      <h1>Lorem Ipsum & Such</h1>
-      <h2>Arrow buttons need styling to do the thing</h2>
+      <h1 id="main-start">Lorem Ipsum & Such</h1>
+      <h2>Something cool goes here</h2>
 
       <div class="btn-group">
-        <a class="arrow-btn teal-btn" href="#">This a Button <span class="arrow white-arw"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></a>
-        <a class="arrow-btn white-btn" href="#">That a Button <span class="arrow teal-arw"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></a>
+        <a class="arrow-btn teal-btn" href="#"><span class="animate-teal text">This a Button</span><span class="btn-animate"></span><i class="arrow fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        <a class="arrow-btn white-btn" href="#"><span class="animate-white text">That a Button</span><span class="btn-animate"></span><i class="arrow fa-solid fa-arrow-right" aria-hidden="true"></i></a>
       </div>
     </div>
   </header>
@@ -54,8 +57,8 @@
       <div>
         <h3>What Happen</h3>
         <div>
-          <button id="leftArrow" class="arrow"><-</button>
-          <button id="rightArrow" class="arrow">-></button>
+          <button id="leftArrow"><-</button>
+          <button id="rightArrow">-></button>
         </div>
         <div id="slider">
             <div class="testimonial"></div>
