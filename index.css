@@ -157,17 +157,31 @@ h1 {
     font-size: 3.25rem;
 }
 
-h2 {
+header h2 {
     font-weight: 400;
     margin: 20px 0;
 }
 
 /* --------------- Main Styling --------------- */
 
-.intro, .testimonial-slider,
-.services-slider, .faqs-section {
-    margin: 5px 10px;
+main {
+    margin-top: 10px;
+    margin-bottom: 32px;
 }
+
+
+
+.intro, .info-tidbit, .services-section, 
+.testimonial-section, .faqs-section, .cta {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.intro, .faqs-section, .cta {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 .bubble {
     display: inline-block;
@@ -177,6 +191,8 @@ h2 {
     border-radius: 24px;
     font-size: .625rem;
 }
+
+/* -------- Intro/Grid Styling -------- */
 
 .grid {
     display: flex;
@@ -188,7 +204,7 @@ h2 {
 }
 
 .block {
-    background-color: rgb(242, 246, 246);
+    background-color: #457e6c;
     border-radius: 10px;
     width: 20%;
 }
@@ -221,14 +237,97 @@ h2 {
 }
 
 
+/* -------- Info Tidbit Styling -------- */
+
+
 .info-tidbit {
     height: 200px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: top;
 }
 
+
+
+/* -------- Services Styling -------- */
+
+.services-section {
+    margin-top: 10px;
+    background:
+    linear-gradient(
+        #fff 80%,
+        #457e6c 20%);
+}
+
+
+
+
+/* -------- Testimonial Styling -------- */
+
+.testimonial-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: #457e6c;
+
+}
+
+
+
+
+
+
+/* -------- FAQs Styling -------- */
+
+
+
+
+
+
+
+
+/* -------- CTA Styling -------- */
+
+.cta {
+    margin-top: 64px;
+}
+
+.cta-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 12px;
+    border-radius: 24px;
+    background:
+        linear-gradient(
+            rgba(7, 85, 62, 0.75) 100%,
+            rgba(7, 85, 62, 0.75) 100%),
+        url("resources/pexels-rethaferguson-3060703.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid #ffffff75;
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    padding: 64px 24px;
+}
+
+.cta p {
+    margin: 24px 0;
+}
 
 
 
