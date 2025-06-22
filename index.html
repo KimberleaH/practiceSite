@@ -9,8 +9,7 @@
 </head>
 
 <body>
-  <header class="fun-bg">
-    <div class="hero-bg"></div>
+  <header class="light-bg hero-bg fun-bg">
 
     <nav> <!-------- NAV BAR -------->
         <a class="logo" href="#"><img src="resources/logoipsum-215.svg" alt="Home page button"></a>
@@ -37,30 +36,58 @@
   </header>
 
   <main> <!-------- MAIN START -------->
-    <p class="bubble">Blah</p>
-    <h3>Why Happen</h3>
+    <section class="intro">
+      <p class="bubble">Blah</p>
+      <h3>A Cool Heading Goes <em>Here</em></h3>
+    
+      <div class="grid"> <!-------- GRID -------->
+        <div class="container">
+          <div class="row">
+            <div class="block small"></div>
+            <div class="block long"></div>
+          </div>
 
-    <section id="grid"> <!-------- GRID -------->
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
-      <div class="block"></div>
+          <div class="row">
+            <div class="block long"></div>
+            <div class="block small"></div>
+          </div>
+        </div>
+
+        <div class="block sidebar"></div>
+      </div>
     </section>
 
     <section class="info-tidbit fun-bg"> <!-------- INFO TIDBIT -------->
       <p>Put something here other than lorem ipsum</p>
     </section>
 
-    <section id="testimonial-slider"> <!-------- TESTIMONIALS -------->
+    <section class="services-slider"> <!-------- TESTIMONIALS -------->
       <p class="bubble">Blah</p>
       <div>
-        <h3>What Happen</h3>
+        <h3>Heading Also Goes <em>Here</em></h3>
         <div>
           <button id="leftArrow"><-</button>
           <button id="rightArrow">-></button>
         </div>
-        <div id="slider">
+        <div id="serviceSlider">
+            <div class="service"></div>
+            <div class="service"></div>
+            <div class="service"></div>
+            <div class="service"></div>
+            <div class="service"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-slider"> <!-------- TESTIMONIALS -------->
+      <p class="bubble">Blah</p>
+      <div>
+        <h3>Another <em>Heading</em> Here</h3>
+        <div>
+          <button id="leftArrow"><-</button>
+          <button id="rightArrow">-></button>
+        </div>
+        <div id="testimonialSlider">
             <div class="testimonial"></div>
             <div class="testimonial"></div>
             <div class="testimonial"></div>
@@ -94,29 +121,30 @@
   </main> <!-------- MAIN END -------->
 
   <footer> <!-------- FOOTER -------->
-    <div>
+    <div class="footer-nav">
       <div>
-        <h4></h4>
-        <p></p>
+        <h4>Follow Us</h4>
+        <p>Stay up to date on stuffs</p>
         <div>
           socials
         </div>
+        <p class="copyright">HTML, CSS, JS © 2025 Kimberlea Heili</p>
       </div>
 
-      <ul class="footer-nav">
-        <li class="bold">Blah</li>
-        <li><a>Blah</a></li>
-        <li><a>Blah</a></li>
-        <li><a>Blah</a></li>
-        <li><a>Blah</a></li>
+      <ul class="footer-links">
+        <li><h4>Blah</h4></li>
+        <li><a href="#">Blah</a></li>
+        <li><a href="#">Blah</a></li>
+        <li><a href="#">Blah</a></li>
+        <li><a href="#">Blah</a></li>
       </ul>
 
-      <ul class="footer-nav">
-        <li class="bold">Blah</li>
-        <li><a>Blah</a></li>
-        <li><a>Blah</a></li>
-        <li><a>Blah</a></li>
-        <li><a>Blah</a></li>
+      <ul class="footer-links">
+        <li><h4>Blah</h4></li>
+        <li><a href="#">Blah</a></li>
+        <li><a href="#">Blah</a></li>
+        <li><a href="#">Blah</a></li>
+        <li><a href="#">Blah</a></li>
       </ul>
 
       <div class="btn-group">
@@ -125,7 +153,10 @@
       </div>
     </div>
 
-    <div>Big ol' Logo</div>
+    <div class="footer-logo">
+      <img src="resources/logoipsum-215.svg" alt="logoipsum">
+    </div>
+    
   </footer>
 </body>
 </html>
