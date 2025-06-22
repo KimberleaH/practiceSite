@@ -172,12 +172,13 @@ main {
 
 
 .intro, .info-tidbit, .services-section, 
-.testimonial-section, .faqs-section, .cta {
+.testimonial-content, .faqs-section, .cta {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.intro, .faqs-section, .cta {
+.intro, .services-content, .testimonial-content,
+.faqs-section, .cta {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -259,10 +260,63 @@ main {
     linear-gradient(
         #fff 80%,
         #457e6c 20%);
+    width: 100%;
 }
 
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
+#serviceSlider {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 400px;
+}
 
+.service-card {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 100%;
+    width: 300px;
+    padding: 15px;
+    color: white;
+    background-color: rgb(242, 246, 246);
+    border-radius: 10px;
+    background-image: url("resources/pexels-sohi-807598.jpg");
+    transition: 200ms ease-out;
+}
+
+.service-card:hover {
+    background:
+        linear-gradient(
+            #00000060 100%,
+            #00000060 100%),
+        url("resources/pexels-sohi-807598.jpg");
+}
+
+.service-info {
+    transition: 200ms ease-out;
+}
+
+.service-card:hover .service-info {
+    transform: translateY(-325px);
+}
+
+.hidden-button {
+    display: none;
+    color: white;
+    transition: 200ms ease-out;
+}
+
+.service-card:hover .hidden-button {
+    display: block;
+}
 
 /* -------- Testimonial Styling -------- */
 
@@ -270,7 +324,12 @@ main {
     padding-top: 72px;
     padding-bottom: 72px;
     background-color: #457e6c;
+}
 
+.testimonial-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 
