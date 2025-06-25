@@ -196,53 +196,68 @@ main {
 /* -------- Intro/Grid Styling -------- */
 
 .grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
     gap: 10px;
-    width: 100%;
-    height: 450px;
-    margin-top: 24px;
-    margin-bottom: 10px;
+    margin: 24px 18px 10px;
 }
 
 .block {
-    background-color: #457e6c;
+    min-height: 225px;
     border-radius: 10px;
-    width: 20%;
 }
 
-.sidebar {
-    width: 30%;
-    height: 100%;
+.one {
+    grid-column: 1 / 3;
+    background-image: url("resources/pexels-tara-winstead-7663271.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.container {
+.two {
+    grid-column: 3 / 8;
+    background-color: #e7efe7;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 70%;
+    justify-content: flex-end;
+    padding: 24px;
 }
 
-.row {
+.three {
+    grid-column: 8 / 11;
+    grid-row: 1 / 3;
+    background-color: #5f876f;
+    color: white;
     display: flex;
-    gap: 10px;
-    width: 100%;
-    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
 }
 
-.small {
-    width: 30%;
+.four {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    background-color: #e7efe7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
 }
 
-.long {
-    width: 70%;
+.five {
+    grid-column: 6 / 8;
+    grid-row: 2 / 3;
+    background-image: url("resources/pexels-sohi-807598.jpg");
+    background-size: cover;
 }
+
 
 
 /* -------- Info Tidbit Styling -------- */
 
 
 .info-tidbit {
-    height: 200px;
+    height: 350px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -259,7 +274,7 @@ main {
     background:
     linear-gradient(
         #fff 80%,
-        #457e6c 20%);
+        #5f876f 20%);
     width: 100%;
 }
 
@@ -267,6 +282,15 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.slider-arrow {
+    border-radius: 50%;
+    border: 1px solid teal;
+    background-color: #fff;
+    color: teal;
+    height: 35px;
+    width: 35px;
 }
 
 #serviceSlider {
@@ -286,7 +310,6 @@ main {
     width: 300px;
     padding: 15px;
     color: white;
-    background-color: rgb(242, 246, 246);
     border-radius: 10px;
     background-image: url("resources/pexels-sohi-807598.jpg");
     transition: 200ms ease-out;
@@ -318,12 +341,18 @@ main {
     display: block;
 }
 
+
+
+
+
+
+
 /* -------- Testimonial Styling -------- */
 
 .testimonial-section {
     padding-top: 72px;
     padding-bottom: 72px;
-    background-color: #457e6c;
+    background-color: #5f876f;
 }
 
 .testimonial-content {
@@ -397,7 +426,7 @@ main {
 
 
 footer {
-    background-color: rgb(242, 246, 246);
+    background-color: #e7efe7;
     padding-top: 30px;
 }
 
