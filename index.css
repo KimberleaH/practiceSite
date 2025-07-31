@@ -282,6 +282,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 10px;
 }
 
 .slider-arrow {
@@ -293,13 +294,19 @@ main {
     width: 35px;
 }
 
+.slider-arrow:hover {
+    background-color: #e7efe7;
+}
+
 #serviceSlider {
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
-    max-width: 1200px;
     margin: 0 auto;
     height: 400px;
+    max-width: 1200px;
+    overflow: hidden;
+    transition: all 500ms ease;
 }
 
 .service-card {
@@ -307,7 +314,7 @@ main {
     align-items: flex-end;
     justify-content: flex-start;
     height: 100%;
-    width: 300px;
+    min-width: 250px;
     padding: 15px;
     color: white;
     border-radius: 10px;
@@ -368,9 +375,19 @@ main {
 
 /* -------- FAQs Styling -------- */
 
+.faqs-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.left {
+    width: 40%;
+}
 
 
-
+.right {
+    width: 60%;
+}
 
 
 

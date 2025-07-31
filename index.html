@@ -71,8 +71,8 @@
           <h3>Heading Also Goes <em>Here</em></h3>
         </div>
         <div>
-          <button id="serviceArrowLeft" class="slider-arrow"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
-          <button id="serviceArrowRight" class="slider-arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+          <button onclick="slideLeft(serviceSlider)" class="slider-arrow"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+          <button onclick="slideRight(serviceSlider)" class="slider-arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
         </div>
       </div>
       <div id="serviceSlider">
@@ -102,6 +102,42 @@
           </div>
           <a href="#" class="hidden-button">Learn More</a>
         </div>
+
+        <!-- Service Card -->
+        <div class="service-card">
+          <div class="service-info">
+            <h4>Title</h4>
+            <p>Short blurb here</p>
+          </div>
+          <a href="#" class="hidden-button">Learn More</a>
+        </div>
+
+        <!-- Service Card -->
+        <div class="service-card">
+          <div class="service-info">
+            <h4>Title</h4>
+            <p>Short blurb here</p>
+          </div>
+          <a href="#" class="hidden-button">Learn More</a>
+        </div>
+
+        <!-- Service Card -->
+        <div class="service-card">
+          <div class="service-info">
+            <h4>Title</h4>
+            <p>Short blurb here</p>
+          </div>
+          <a href="#" class="hidden-button">Learn More</a>
+        </div>
+
+        <!-- Service Card -->
+        <div class="service-card">
+          <div class="service-info">
+            <h4>Title</h4>
+            <p>Short blurb here</p>
+          </div>
+          <a href="#" class="hidden-button">Learn More</a>
+        </div>
       </div>
     </section>
 
@@ -111,9 +147,9 @@
           <p class="bubble">Blah</p>
           <h3>Another <em>Heading</em> Here</h3>
         </div>
-        <div>
-          <button id="leftArrow"><-</button>
-          <button id="rightArrow">-></button>
+       <div>
+          <button onclick="slideLeft(testimonialSlider)" class="slider-arrow"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+          <button onclick="slideRight(testimonialSlider)" class="slider-arrow"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
         </div>
       </div>
       <div id="testimonialSlider">
@@ -188,5 +224,7 @@
     </div>
     
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
